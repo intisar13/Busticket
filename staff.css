@@ -1,0 +1,143 @@
+/* Global Styles */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; /* Fixed the height unit */
+    background-color: rgb(47, 61, 61);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(bus1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+a,
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar Styles */
+.dropdown {
+    height: 10vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Products,
+.Routes,
+.Services {
+    position: relative;
+}
+
+.Products ul,
+.Routes ul,
+.Services ul {
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: white;
+    left: 0px;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.Products a,
+.Routes a,
+.Services a {
+    color: black;
+    text-decoration: none;
+}
+
+.Products li:hover,
+.Routes li:hover,
+.Services li:hover {
+    background-color: rgb(150, 148, 148);
+}
+
+.dropdown button,
+.home {
+    background: none;
+    text-decoration: solid;
+    border: none;
+    color: rgb(217, 234, 217);
+    font-size: 25px;
+    cursor: pointer;
+    text-shadow: #4923d1;
+}
+
+.Products button:focus + ul,
+.Routes button:focus + ul,
+.Services button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+table {
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Apply white background to table rows */
+tr {
+    background-color: white;
+}

@@ -1,0 +1,80 @@
+body {
+    height: 100vh;
+    background-color: rgb(47, 61, 61);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(bus3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+input[type="radio"],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.row {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    
+    position: fixed;
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Positioned at the left */
+    width: 100%; /* Full width */
+    padding: 10px 30px 40px 40px;
+    border-bottom: 100px; /* I assume this is a typo, not sure what it's supposed to represent */
+    margin: 0; /* Reset margin */
+    color:  rgb(200, 220, 225);
+    z-index: 999; /* Ensure it appears above other content */
+}
